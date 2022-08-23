@@ -1,1 +1,90 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+.search-form {
+  text-align: center;
+}
+
+.load-more {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background: #8058581e;
+}
+.button-search {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fe6637;
+  transition: 0.2s ease-in-out;
+}
+.button-search:before {
+  content: '';
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.5)
+  );
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.button-search:hover {
+  background: #fe6637;
+  color: #fff;
+}
+.button-search:hover:before {
+  left: 150px;
+  transition: 0.5s ease-in-out;
+}
+
+.search-input {
+  //   margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 50%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.load-btn > .spinner.is-hidden {
+  display: none;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+b {
+  text-decoration: none;
+}
