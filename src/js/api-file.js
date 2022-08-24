@@ -12,7 +12,7 @@ export default class NewsApiService {
   constructor() {
     this.searchQuery = '';
     this.page = 1;
-    this.per_page = 10;
+    this.per_page = 20;
     this.totalPage = 0;
     this.loadedNow = 0;
   }
@@ -31,7 +31,7 @@ export default class NewsApiService {
       this.incrementPage();
       this.resetLoaded();
 
-      const url = `${BASE_URL}?key=${API_KEY} `;
+      const url = `${BASE_URL}?key=${API_KEY}`;
 
       return axios.get(url, searchOptions);
     } catch (error) {

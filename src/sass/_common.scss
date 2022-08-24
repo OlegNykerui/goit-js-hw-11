@@ -2,6 +2,7 @@
 
 .search-form {
   text-align: center;
+  margin-top: 100px;
 }
 
 .load-more {
@@ -56,13 +57,21 @@ body {
   font-size: 1.2rem;
   margin: 0 auto;
   padding: 1.5rem 2rem;
-  border-radius: 0.2rem;
+  border-radius: 1px solid rgb(218, 238, 197);
   background-color: rgb(255, 255, 255);
   border: none;
   width: 50%;
   display: block;
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
+  border-radius: 20px;
+}
+
+.search-input:focus {
+  color: black;
+  background-color: rgb(218, 238, 197);
+  border-color: rgb(218, 238, 197);
+  // border-radius: 2px;
 }
 
 .is-hidden {
@@ -76,6 +85,7 @@ body {
 img {
   width: 300px;
   height: 200px;
+  border-radius: 10%;
 }
 
 .gallery {
@@ -85,6 +95,45 @@ img {
   justify-content: center;
 }
 
-b {
+p {
   text-decoration: none;
+}
+
+.photo-card__link {
+  width: 300px;
+  margin: 0 auto;
+  background: white;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: Lora;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  border: 2px solid rgb(226, 213, 213);
+  border-radius: 10%;
+}
+
+.load-more {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.load-more:hover {
+  background-color: black;
+  color: white;
 }
