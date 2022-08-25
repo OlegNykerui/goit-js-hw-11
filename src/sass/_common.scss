@@ -2,7 +2,7 @@
 
 .search-form {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 .load-more {
@@ -136,4 +136,13 @@ p {
 .load-more:hover {
   background-color: black;
   color: white;
+}
+
+.title {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-family: fantasy;
+  color: #fe6637;
 }
